@@ -1,46 +1,25 @@
 export default {
-  products: [
-    {
-      _id: '1',
-      name: 'Slim Shirt',
-      category: 'Shirts',
-      image: '/images/d1.jpg',
-      price: 60,
-      brand: ' Nike',
-      rating: 4.5,
-      numReviews: 10,
-      countInStock: 6,
-    },
-    {
-      _id: '2',
-      name: 'Fit Shirt',
-      category: 'Shirts',
-      image: '/images/d1.jpg',
-      price: 50,
-      brand: ' Nike',
-      rating: 4.2,
-      numReviews: 5
-    },
-    {
-      _id: '3',
-      name: 'Best Pants',
-      category: 'Pants',
-      image: '/images/d1.jpg',
-      price: 70,
-      brand: ' Nike',
-      rating: 4.5,
-      numReviews: 8,
-      countInStock: 6,
-    }, {
-      _id: '4',
-      name: 'Best Pants',
-      category: 'Pants',
-      image: '/images/d1.jpg',
-      price: 70,
-      brand: ' Nike',
-      rating: 4.5,
-      numReviews: 8,
-      countInStock: 6,
-    },
+  products: 
+  [
+    { "_id" : ObjectId("5ecf32d02158cc1b14e7a34f"), "price" : 60, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Cotton Fit Shirt", "image" : "/images/d1.jpg", "brand" : "Nike", "category" : "Shirts", "description" : "test", "__v" : 0 }
+    { "_id" : ObjectId("5ecf33082158cc1b14e7a350"), "price" : 50, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Classic Shirt", "image" : "/images/d2.jpg", "brand" : "Lascoste", "category" : "Shirts", "description" : "test1", "__v" : 0 }
+    { "_id" : ObjectId("5ecf332a2158cc1b14e7a351"), "price" : 70, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Slim Shirt", "image" : "/images/d3.jpg", "brand" : "Nike", "category" : "Shirts", "description" : "test3", "__v" : 0 }
+    { "_id" : ObjectId("5ecf336a2158cc1b14e7a352"), "price" : 80, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Cotton Pants", "image" : "/images/p1.jpg", "brand" : "Lascoste", "category" : "Pants", "description" : "test4", "__v" : 0 }
+    { "_id" : ObjectId("5ecf338f2158cc1b14e7a353"), "price" : 90, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Slim Pants", "image" : "/images/p2.jpg", "brand" : "Nike", "category" : "Pants", "description" : "test5", "__v" : 0 }
+    { "_id" : ObjectId("5ecf33af2158cc1b14e7a354"), "price" : 99, "countInStock" : 6, "rating" : 0, "numReviews" : 0, "name" : "Fit Pants", "image" : "/images/p3.jpg", "brand" : "Lascoste", "category" : "Pants", "description" : "test6", "__v" : 0 }
+  ],
+  users:
+  [
+    { "_id" : ObjectId("5ecea4983c8e0221387e1321"), "isAdmin" : true, "name" : "test", "email" : "test@gmail.com", "password" : "1234", "__v" : 0 }
+    { "_id" : ObjectId("5ed21f68587cdf430cb6500b"), "isAdmin" : false, "name" : "testuser", "email" : "testuser@gmail.com", "password" : "1234", "__v" : 0 }
+  ],
+  orders:
+  [
+    { "_id" : ObjectId("5ecf37732158cc1b14e7a355"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecf37732158cc1b14e7a356"), "product" : ObjectId("5ecf33af2158cc1b14e7a354"), "name" : "Fit Pants", "image" : "/images/p3.jpg", "price" : "99", "qty" : 6 }, { "_id" : ObjectId("5ecf37732158cc1b14e7a357"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 1 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "ewrewr", "city" : "ewrwer", "postalCode" : "ádasd", "country" : "ádasd" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 674, "taxPrice" : 101.1, "shippingPrice" : 0, "totalPrice" : 775.1, "createdAt" : ISODate("2020-05-28T04:00:51.842Z"), "updatedAt" : ISODate("2020-05-28T04:00:51.842Z"), "__v" : 0 }
+    { "_id" : ObjectId("5ecf40462158cc1b14e7a358"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecf40462158cc1b14e7a359"), "product" : ObjectId("5ecf33af2158cc1b14e7a354"), "name" : "Fit Pants", "image" : "/images/p3.jpg", "price" : "99", "qty" : 6 }, { "_id" : ObjectId("5ecf40462158cc1b14e7a35a"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 1 }, { "_id" : ObjectId("5ecf40462158cc1b14e7a35b"), "product" : ObjectId("5ecf338f2158cc1b14e7a353"), "name" : "Slim Pants", "image" : "/images/p2.jpg", "price" : "90", "qty" : 1 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "ttttttt", "city" : "tttttttttt", "postalCode" : "ttttttttttt", "country" : "tttttttttttttt" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 764, "taxPrice" : 114.6, "shippingPrice" : 0, "totalPrice" : 878.6, "createdAt" : ISODate("2020-05-28T04:38:30.085Z"), "updatedAt" : ISODate("2020-05-28T04:38:30.085Z"), "__v" : 0 }
+    { "_id" : ObjectId("5ecf41242158cc1b14e7a35c"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecf41242158cc1b14e7a35d"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 1 }, { "_id" : ObjectId("5ecf41242158cc1b14e7a35e"), "product" : ObjectId("5ecf338f2158cc1b14e7a353"), "name" : "Slim Pants", "image" : "/images/p2.jpg", "price" : "90", "qty" : 1 }, { "_id" : ObjectId("5ecf41242158cc1b14e7a35f"), "product" : ObjectId("5ecf332a2158cc1b14e7a351"), "name" : "Slim Shirt", "image" : "/images/d3.jpg", "price" : "70", "qty" : 6 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "qqqqqqq", "city" : "ewrwer", "postalCode" : "ttttttttttt", "country" : "tttttttttttttt" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 590, "taxPrice" : 88.5, "shippingPrice" : 0, "totalPrice" : 678.5, "createdAt" : ISODate("2020-05-28T04:42:12.804Z"), "updatedAt" : ISODate("2020-05-28T04:42:12.804Z"), "__v" : 0 }
+    { "_id" : ObjectId("5ecfa25539022210c4325396"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecfa25539022210c4325397"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 1 }, { "_id" : ObjectId("5ecfa25539022210c4325398"), "product" : ObjectId("5ecf338f2158cc1b14e7a353"), "name" : "Slim Pants", "image" : "/images/p2.jpg", "price" : "90", "qty" : 1 }, { "_id" : ObjectId("5ecfa25539022210c4325399"), "product" : ObjectId("5ecf332a2158cc1b14e7a351"), "name" : "Slim Shirt", "image" : "/images/d3.jpg", "price" : "70", "qty" : 6 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "ttttttt", "city" : "ewrwer", "postalCode" : "ttttttttttt", "country" : "tttttttttttttt" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 590, "taxPrice" : 88.5, "shippingPrice" : 0, "totalPrice" : 678.5, "createdAt" : ISODate("2020-05-28T11:36:53.552Z"), "updatedAt" : ISODate("2020-05-28T11:36:53.552Z"), "__v" : 0 }
+    { "_id" : ObjectId("5ecfa36539022210c432539a"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecfa36539022210c432539b"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 3 }, { "_id" : ObjectId("5ecfa36539022210c432539c"), "product" : ObjectId("5ecf338f2158cc1b14e7a353"), "name" : "Slim Pants", "image" : "/images/p2.jpg", "price" : "90", "qty" : 1 }, { "_id" : ObjectId("5ecfa36539022210c432539d"), "product" : ObjectId("5ecf332a2158cc1b14e7a351"), "name" : "Slim Shirt", "image" : "/images/d3.jpg", "price" : "70", "qty" : 6 }, { "_id" : ObjectId("5ecfa36539022210c432539e"), "product" : ObjectId("5ecf33af2158cc1b14e7a354"), "name" : "Fit Pants", "image" : "/images/p3.jpg", "price" : "99", "qty" : 1 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "ttttttt", "city" : "ewrwer", "postalCode" : "ttttttttttt", "country" : "tttttttttttttt" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 849, "taxPrice" : 127.35, "shippingPrice" : 0, "totalPrice" : 976.35, "createdAt" : ISODate("2020-05-28T11:41:25.948Z"), "updatedAt" : ISODate("2020-05-28T11:41:25.948Z"), "__v" : 0 }
+    { "_id" : ObjectId("5ecfa49f39022210c432539f"), "isPaid" : false, "isDelivered" : false, "orderItems" : [ { "_id" : ObjectId("5ecfa49f39022210c43253a0"), "product" : ObjectId("5ecf336a2158cc1b14e7a352"), "name" : "Cotton Pants", "image" : "/images/p1.jpg", "price" : "80", "qty" : 3 }, { "_id" : ObjectId("5ecfa49f39022210c43253a1"), "product" : ObjectId("5ecf338f2158cc1b14e7a353"), "name" : "Slim Pants", "image" : "/images/p2.jpg", "price" : "90", "qty" : 1 }, { "_id" : ObjectId("5ecfa49f39022210c43253a2"), "product" : ObjectId("5ecf332a2158cc1b14e7a351"), "name" : "Slim Shirt", "image" : "/images/d3.jpg", "price" : "70", "qty" : 6 }, { "_id" : ObjectId("5ecfa49f39022210c43253a3"), "product" : ObjectId("5ecf33af2158cc1b14e7a354"), "name" : "Fit Pants", "image" : "/images/p3.jpg", "price" : "99", "qty" : 1 } ], "user" : ObjectId("5ecea4983c8e0221387e1321"), "shipping" : { "address" : "ttttttt", "city" : "ewrwer", "postalCode" : "ttttttttttt", "country" : "tttttttttttttt" }, "payment" : { "paymentMethod" : "paypal" }, "itemsPrice" : 849, "taxPrice" : 127.35, "shippingPrice" : 0, "totalPrice" : 976.35, "createdAt" : ISODate("2020-05-28T11:46:39.440Z"), "updatedAt" : ISODate("2020-05-28T11:46:39.440Z"), "__v" : 0 }
   ]
 }
